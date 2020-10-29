@@ -1,9 +1,9 @@
-package com.back.domain.shop;
+package com.flowers.shop;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.back.domain.products.Product;
+import com.flowers.products.Product;
 
 
 public class Shop {

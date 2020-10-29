@@ -1,4 +1,4 @@
-package com.back.domain.products;
+package com.flowers.products;
 
 public class Flower extends Product{
 

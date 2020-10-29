@@ -1,11 +1,11 @@
-package com.back.domain.products;
+package com.flowers.products;
+
+import com.flowers.tools.Material;
 
 public class Decoration  extends Product {
 
-    
-	//private String material;
-    private enum Material {plastic, fusta}
-    Material material;
+        
+    private Material material;
 	
 	
     // CONSTRUCTOR

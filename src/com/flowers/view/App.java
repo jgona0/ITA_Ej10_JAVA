@@ -1,4 +1,4 @@
-package com.back.view;
+package com.flowers.view;
 
 public class App {
 

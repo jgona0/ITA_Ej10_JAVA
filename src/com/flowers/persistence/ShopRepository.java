@@ -1,9 +1,8 @@
-package com.back.persistence;
+package com.flowers.persistence;
 
-import java.util.ArrayList;
 import java.util.List;
 
-import com.back.domain.shop.Shop;
+import com.flowers.shop.Shop;
 
 public class ShopRepository {
 
@@ -17,11 +16,11 @@ public class ShopRepository {
 	
 	
 	//GETTERS & SETTERS
-	public static List<Shop> getShops() {
+	public List<Shop> getShops() {
 		return shops;
 	}
 
-	public static void setShops(List<Shop> shops) {
+	public void setShops(List<Shop> shops) {
 		ShopRepository.shops = shops;
 	}
 
