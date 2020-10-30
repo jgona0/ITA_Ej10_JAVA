@@ -1,17 +1,26 @@
 package com.flowers.persistence;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.flowers.shop.Shop;
 
+
+// Clase ShopRepository, que implementa la lista de tiendas que tiene nuestro programa para que se puedan persistir, acceder y anadirles productos.
 public class ShopRepository {
 
-	private static List<Shop> shops;
+	private static List<Shop> shops = new ArrayList<>();
 
 
 	//CONSTRUCTOR
 	public ShopRepository() {
-		//shops = new ArrayList<>();
+
+	}
+	
+
+	//Metodo que añade una shop a la lista de shops
+	public void addShop(Shop shop) {
+		shops.add(shop);
 	}
 	
 	
@@ -24,9 +33,5 @@ public class ShopRepository {
 		ShopRepository.shops = shops;
 	}
 
-	
-	public void addShop(Shop shop) {
-		shops.add(shop);
-	}
 	
 }

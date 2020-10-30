@@ -1,5 +1,7 @@
 package com.flowers.products;
 
+
+//Clase flor, que extiende de producto, con su atributo color y el resto heredados. Es uno de los productos que puede tener una tienda
 public class Flower extends Product{
 
     private String colour;
@@ -25,7 +27,7 @@ public class Flower extends Product{
 
 	@Override
 	public String toString() {
-		return "Flower [colour=" + colour + "]";
+		return "\t \t -->Flor:" +name+ " -->Precio:" +price+ " -->Color:"+colour;
 	}
 
 	

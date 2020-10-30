@@ -3,9 +3,13 @@ package com.flowers.shop;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.flowers.products.Decoration;
+import com.flowers.products.Flower;
 import com.flowers.products.Product;
+import com.flowers.products.Tree;
 
 
+// Clase Shop que implementa uan tienda que tiene un nombre, una lista de productos y un id particular
 public class Shop {
 
 	private String name;
@@ -63,6 +67,45 @@ public class Shop {
 	}
 
 
+	@Override
+	public String toString() {
+		
+	    List<Tree> trees = new ArrayList<>();
+	    List<Flower> flowers = new ArrayList<>();
+	    List<Decoration> decorations = new ArrayList<>();
+		
+	    
+	    for (Product p: stock) {
+			
+	    	if(p instanceof Tree) trees.add((Tree) p);
+	    	if(p instanceof Flower) flowers.add((Flower) p);
+	    	if(p instanceof Decoration) decorations.add((Decoration) p);
+	    	
+		}
+		
+		
+		String result = "** Shop "+name+ " **\n ARBOLES:";
+		
+		for (Tree t: trees) {
+			result += t.toString();
+		}
+		
+		result += "\n FLORES:";
+		
+		for (Flower f: flowers) {
+			result += f.toString();
+		}
+		
+		result += "\n DECORACIONES: \n";
+		
+		for (Decoration d: decorations) {
+			result += d.toString();
+		}
+		
+		
+		return result;
+		
+	}
     
 
 }

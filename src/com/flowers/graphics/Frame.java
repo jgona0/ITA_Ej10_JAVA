@@ -1,7 +1,5 @@
 package com.flowers.graphics;
 
-import java.awt.*;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -15,7 +13,7 @@ public class Frame extends JFrame{
 	public Frame() {
 		
 		setTitle("Shop creator");
-		setBounds(100,100,800,500);
+		setBounds(100,100,800,700);
 		
 		main_panel = new MainPanel();
 		add(main_panel);

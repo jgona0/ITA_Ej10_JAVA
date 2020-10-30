@@ -1,9 +1,12 @@
 package com.flowers.products;
 
+
+
+// Clase producto, que sirve como clase padre de Arbol, Flor y Decoración. (el id está implementado pero finalmente no se está utilizando)
 public class Product {
 	
-	private String name;
-    private double price;
+	protected String name;
+    protected double price;
     private int id;
     private static int next_id = 1;
 	
